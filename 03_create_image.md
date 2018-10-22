@@ -47,6 +47,8 @@ docker run --name nuez-db -e MYSQL_USER=nuez-app -e MYSQL_PASSWORD=nuez+1 -e MYS
 
 The runs the nuez-db images as a containers with the same name as nuez-db. It sets some optional environment variables inherited from the base image such as MYSQL_USER, MYSQL_PASSWORD and MYSQL_DATABASE to create a new user and database/schema. It also sets the required MYSQL_ROOT_PASSWORD to set a password for the root user. Finally it exposes the internal container port of 3306 externally as 3306 too and runs the container in the detached mode which I like to think about as a deamon mode since it will run in the background until you stop it.
 
+Visit [https://hub.docker.com/_/mysql/](https://hub.docker.com/_/mysql/) to learn more about the mysql options and environment variables.
+
 6. List running containers.
 
 ```
