@@ -4,7 +4,7 @@ In this lab, you learn how to compose multiple images into a single group that c
 
 ## Create a Docker composition.
 
-1. Create a docker-compose.xml file and enter the following text:
+1. Create a docker-compose.yml file and enter the following text:
 
 ```
 version: "3"
@@ -39,7 +39,7 @@ DB_DB=nuez
 DB_ROOT_PASS=root+1
 ```
 
-3. In the directory with the docker-compose.xml and .env file run the following to start the composition:
+3. In the directory with the docker-compose.yml and .env file run the following to start the composition:
 
 ```
 docker-compose up -d
@@ -56,7 +56,7 @@ docker ps
 docker network ls
 ```
 
-6. In the same directory as the docker-compose.xml shut everything down by running the following:
+6. In the same directory as the docker-compose.yml shut everything down by running the following:
 
 ```
 docker-compose down
