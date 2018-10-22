@@ -1,6 +1,6 @@
 # Docker Machine (Docker Toolbox only)
 
-If you are using Docker Toolbox, you have one or more machines that are represented by virtual machines in Virtual Box. A machine may or may not have been created for you during the installation process. But to make sure the labs are run in a sandbox and to make sure you don't accidently cause any problem with a machine you are using for work, you should create a separate lab machine.
+In this lab, if you are using Docker Toolbox, you will create a new Docker Machine to sandbox the workshop labs from any Docker Machines you may be using for work.
 
 ## List existing Docker Machines.
 
@@ -49,8 +49,16 @@ docker-machine ls
 
 ## Determine ip address of Docker Machine
 
-1. Determine the ip address of your machine so you can use deployed web applications.
+1.  Determine the ip address of your machine so you can use deployed web applications.
 
 ```
 docker-machine ip lab
+```
+
+## Removing the lab Docker Machine after the workshop
+
+Upon completing the workshop, you may want to reclaim the disk space consumed by the lab machine.
+
+```
+docker-machine rm lab
 ```
