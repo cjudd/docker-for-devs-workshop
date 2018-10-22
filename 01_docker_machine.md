@@ -47,7 +47,9 @@ docker-machine env --shell powershell lab | Invoke-Expression
 docker-machine ls
 ```
 
-5. Determine the ip address of your machine so you can use deployed web applications.
+## Determine ip address of Docker Machine
+
+1. Determine the ip address of your machine so you can use deployed web applications.
 
 ```
 docker-machine ip lab
