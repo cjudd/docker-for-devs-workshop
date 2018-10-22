@@ -1,6 +1,6 @@
 # Run Docker Container
 
-In this lab, you will pull and run a Tomcat 7 container.
+In this lab, you will pull a Tomcat 7 images and run it as a container.
 
 ## Pull image and Run container.
 
@@ -22,6 +22,12 @@ You should see the standard Tomcat congradulations page.
 
 ```
 docker ps
+```
+
+NOTE: You can see all containers regardless if they are running or not using the docker ps command as well with the -a option.
+
+```
+docker ps -a
 ```
 
 ## Shut down container
