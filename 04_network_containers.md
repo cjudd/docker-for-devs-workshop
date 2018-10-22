@@ -122,3 +122,18 @@ View standard out of entrypoint application/script for debugging purposes.
 ```
 docker logs
 ```
+
+## Shut down containers
+
+1. Stop both the nuez app and nuez-db containers.
+
+```
+docker stop nuez
+docker stop nuez-db
+```
+
+2. Make sure no containers are running.
+
+```
+docker ps
+```
